@@ -5,6 +5,7 @@ import OrderShipping from "../components/OrderShipping";
 import "../styles/PaymentScreen.css";
 
 export default function PaymentScreen(props) {
+  window.scrollTo(0, 0);
   const cart = useSelector((state) => state.cart);
   const { shippingAddress } = cart;
   if (!shippingAddress.address) {

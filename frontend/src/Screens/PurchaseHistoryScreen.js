@@ -6,6 +6,8 @@ import MessageBox from "../components/MessageBox";
 import "../styles/PurchaseHistoryScreen.css";
 
 export default function PurchaseHistoryScreen(props) {
+  window.scrollTo(0, 0);
+
   const myPurchase = useSelector((state) => state.myPurchase);
   const { error, loading, orders } = myPurchase;
 

@@ -15,6 +15,7 @@ import {
 import "../styles/ProductListScreen.css";
 
 export default function ProductListScreen(props) {
+  window.scrollTo(0, 0);
   // admin list product 2
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;

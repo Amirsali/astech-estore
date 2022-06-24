@@ -10,6 +10,7 @@ import "../styles/ProductEditScreen.css";
 // import { IoLogoWindows } from "react-icons/io5";
 
 export default function ProductEditScreen(props) {
+  window.scrollTo(0, 0);
   const productId = props.match.params.id;
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");

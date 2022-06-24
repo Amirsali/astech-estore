@@ -13,6 +13,8 @@ import Loading from "../components/Loading";
 import "../styles/OrderStatusScreen.css";
 
 export default function OrderStatusScreen(props) {
+  window.scrollTo(0, 0);
+
   const orderId = props.match.params.id;
   //   paypal 2
   const [sdkReady, setSdkReady] = useState(false);

@@ -8,6 +8,8 @@ import { USER_UPDATE_PROFILE_RESET } from "../constants/userConstants";
 import "../styles/ProfileScreen.css";
 
 export default function ProfileScreen() {
+  window.scrollTo(0, 0);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

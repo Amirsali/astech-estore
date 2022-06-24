@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import { addToCart } from "../actions/cartActions";
@@ -16,8 +16,6 @@ function Product(props) {
   const [qty, setQty] = useState(1);
 
   const handleAddtoCart = () => {
-    // history.push(`/cart/${productId}?qty=${qty}`);
-    // dispatch(addToCart(productId));
     dispatch(addToCart(product._id, qty));
   };
   const handleBuyNow = () => {

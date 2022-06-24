@@ -1,0 +1,26 @@
+.similarProducts {
+  margin-top: 1rem;
+  border: 0.15rem #132f5a solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 90rem;
+  min-width: auto;
+}
+
+.similarProducts__items {
+  display: flex;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 480px) {
+  .similarProducts {
+    border: none;
+  }
+  .similarProducts h4 {
+    font-size: larger;
+  }
+
+  i {
+    display: none;
+  }
+}

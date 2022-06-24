@@ -6,6 +6,8 @@ import Subtotal from "../components/Subtotal";
 import "../styles/CartScreen.css";
 
 export default function CartScreen(props) {
+  window.scrollTo(0, 0);
+
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
 

@@ -7,6 +7,8 @@ import MessageBox from "../components/MessageBox";
 import "../styles/SigninScreen.css";
 
 export default function SigninScreen(props) {
+  window.scrollTo(0, 0);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();

@@ -10,6 +10,7 @@ import { ORDER_CREATE_RESET } from "../constants/orderConstants";
 import "../styles/PlaceOrderScreen.css";
 
 export default function PlaceOrderScreen(props) {
+  window.scrollTo(0, 0);
   const [email, setEmail] = useState("");
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;

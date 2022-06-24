@@ -7,6 +7,8 @@ import MessageBox from "../components/MessageBox";
 import "../styles/RegisterScreen.css";
 
 export default function RegisterScreen(props) {
+  window.scrollTo(0, 0);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

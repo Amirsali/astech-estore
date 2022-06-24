@@ -5,6 +5,8 @@ import OrderShipping from "../components/OrderShipping";
 import "../styles/ShippingAddressScreen.css";
 
 export default function ShippingAddressScreen(props) {
+  window.scrollTo(0, 0);
+
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
   const cart = useSelector((state) => state.cart);

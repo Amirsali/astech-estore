@@ -9,6 +9,8 @@ import { USER_DETAILS_RESET } from "../constants/userConstants";
 import "../styles/UserListScreen.css";
 
 export default function UserListScreen(props) {
+  window.scrollTo(0, 0);
+
   const userList = useSelector((state) => state.userList);
   const { loading, error, users } = userList;
   const dispatch = useDispatch();

@@ -8,6 +8,8 @@ import { ORDER_DELETE_RESET } from "../constants/orderConstants";
 import "../styles/OrderListScreen.css";
 
 export default function OrderListScreen(props) {
+  window.scrollTo(0, 0);
+
   const orderList = useSelector((state) => state.orderList);
   const { loading, error, orders } = orderList;
   const orderDelete = useSelector((state) => state.orderDelete);

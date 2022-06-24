@@ -96,7 +96,7 @@ function App() {
             exact
           ></Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

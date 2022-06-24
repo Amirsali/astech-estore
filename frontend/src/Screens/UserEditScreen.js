@@ -11,6 +11,8 @@ import { USER_UPDATE_RESET } from "../constants/userConstants";
 import "../styles/UserEditScreen.css";
 
 export default function UserEditScreen(props) {
+  window.scrollTo(0, 0);
+
   const userId = props.match.params.id;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

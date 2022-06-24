@@ -8,6 +8,8 @@ import Product from "../components/Product";
 import "../styles/SearchScreen.css";
 
 export default function SearchScreen(props) {
+  window.scrollTo(0, 0);
+
   const {
     name = "all",
     category = "all",

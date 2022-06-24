@@ -107,13 +107,6 @@ function Header(props) {
         >
           <i className="fa fa-bars"></i>
         </button>
-        {/* <div className="header__location">
-        <LocationIcon />
-        <div className="header__option">
-          <span className="header__optionLineOne">Deliver to</span>
-          <span className="header__optionLineTwo">Philippines</span>
-        </div>
-      </div> */}
         <BrowserRouter>
           <div className="desktop__search">
             <Route
