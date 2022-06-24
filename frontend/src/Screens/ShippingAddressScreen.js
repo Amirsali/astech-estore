@@ -46,6 +46,7 @@ export default function ShippingAddressScreen(props) {
         saveShippingAddress({
           fullName,
           address,
+          contact,
           city,
           postalCode,
           country,
