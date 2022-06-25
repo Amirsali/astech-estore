@@ -2,18 +2,13 @@ import React from "react";
 import "../styles/Subtotal.css";
 import CurrencyFormat from "react-currency-format";
 import { useHistory } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 function Subtotal(props) {
   const history = useHistory();
 
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-
-  // getting the user info
-  const userSignin = useSelector((state) => state.userSignin);
-  const { userInfo } = userSignin;
-  const dispatch = useDispatch();
 
   const handleCheckout = () => {
     // if no user is logged in, route them to signin page

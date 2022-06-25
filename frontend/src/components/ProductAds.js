@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import "../styles/ProductAds.css";
 import Rating from "./Rating";
@@ -7,8 +6,6 @@ import Rating from "./Rating";
 function ProductAds(props) {
   const { product } = props;
 
-  const dispatch = useDispatch();
-  const productId = product.id;
   const history = useHistory();
   const handleClick = () => history.push(`/product/${product._id}`);
 

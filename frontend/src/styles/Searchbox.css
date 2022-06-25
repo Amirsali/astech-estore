@@ -3,14 +3,12 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  width: 1450px;
+  width: 1420px;
 }
 
 .header__searchInput {
   height: 12px;
   padding: 10px;
-  width: 1420px;
-  width: 100%;
   border: none;
 }
 
@@ -26,6 +24,12 @@
 .header__searchIcon:hover {
   background-color: #183b71;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__search {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {

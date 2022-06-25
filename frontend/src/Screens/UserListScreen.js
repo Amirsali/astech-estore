@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-// import { IoArrowBackCircle } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
-// import { Link } from "react-router-dom";
-import { deleteUser, listUsers } from "../actions/userActions";
+import { listUsers } from "../actions/userActions";
 import Loading from "../components/Loading";
 import MessageBox from "../components/MessageBox";
 import { USER_DETAILS_RESET } from "../constants/userConstants";

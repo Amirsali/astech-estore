@@ -50,7 +50,7 @@ const SimilarProducts = () => {
 
   return (
     <div className="similarProducts">
-      <h4>Similar Products</h4>
+      <h3>Similar Items</h3>
       <i
         onClick={() => {
           sideScroll(contentWrapper.current, 20, 100, -15);

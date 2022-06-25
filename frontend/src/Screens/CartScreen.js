@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "../actions/cartActions";
+import { addToCart } from "../actions/cartActions";
 import CheckoutProduct from "../components/CheckoutProduct";
 import Subtotal from "../components/Subtotal";
 import "../styles/CartScreen.css";

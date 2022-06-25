@@ -26,6 +26,8 @@ import SearchScreen from "./Screens/SearchScreen";
 import MapScreen from "./Screens/MapScreen";
 
 function App() {
+  window.scrollTo(0, 0);
+
   return (
     <Router>
       <div className="App">

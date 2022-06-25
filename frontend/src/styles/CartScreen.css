@@ -24,6 +24,15 @@
   right: 200px;
 }
 
+@media screen and (max-width: 1024px) {
+  .checkout {
+    padding: 20px 100px;
+  }
+  .checkout__right {
+    right: 100px;
+    top: 500px;
+  }
+}
 @media screen and (max-width: 480px) {
   .checkout {
     display: flex;

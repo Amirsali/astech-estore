@@ -13,7 +13,7 @@ function Product(props) {
   const history = useHistory();
   const handleClick = () => history.push(`/product/${product._id}`);
 
-  const [qty, setQty] = useState(1);
+  const [qty] = useState(1);
 
   const handleAddtoCart = () => {
     dispatch(addToCart(product._id, qty));

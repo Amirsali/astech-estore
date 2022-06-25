@@ -2,11 +2,12 @@
   top: 0;
   position: sticky;
   z-index: 100;
+  background-color: #183b71;
 }
 
 .header {
   height: 50px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: #132f5a;
@@ -54,7 +55,6 @@
 .header__searchInput {
   height: 12px;
   padding: 10px;
-  width: 1420px;
   width: 100%;
   border: none;
   border-bottom-left-radius: 10px;
@@ -140,10 +140,6 @@
   /* opacity: 90%; */
 }
 
-/* .dropdown:hover .list__link:hover {
-  opacity: 200%;
-} */
-
 /* Aside */
 aside {
   position: fixed;
@@ -157,8 +153,6 @@ aside {
 }
 aside.open {
   transform: translateX(0);
-  /* max-width: 210px;
-  background: #ffffff; */
 }
 button.open-sidebar {
   font-size: 1.2rem;
@@ -195,6 +189,95 @@ button.close-sidebar {
 .catList {
   text-decoration: none;
   color: white;
+}
+
+/* tablet and iPad */
+@media screen and (max-width: 1180px) {
+  .header {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    place-items: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #132f5a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header__search {
+    width: 100%;
+  }
+  .header__searchInput {
+    width: 100%;
+  }
+  .header__searchIcon {
+    width: 100%;
+  }
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .header__option {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  .header__optionLineTwo {
+    font-size: 14px;
+    font-weight: 800px;
+  }
+  .header__optionBasket {
+    padding-top: 6px;
+  }
+  .header__basketCount {
+    font-size: 12px;
+  }
+  .header__location {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    width: 1500px;
+  }
+  .header__searchInput {
+    height: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .header__searchIcon {
+    padding: 6px;
+    height: 22px !important;
+    justify-content: center;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #265cb0;
+  }
+  .header__searchIcon:hover {
+    background-color: #183b71;
+    cursor: pointer;
+  }
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
 }
 
 /* Mobile view */

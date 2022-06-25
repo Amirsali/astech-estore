@@ -69,13 +69,6 @@ function Header(props) {
     return `/search/category/${filterCategory}/name/${filterName}/min/${filterMin}/max/${filterMax}/rating/${filterRating}/order/${sortOrder}`;
   };
 
-  // Search method
-  const [searchName, setSearchName] = useState("");
-  const submitHandler = (e) => {
-    e.preventDefault();
-    props.history.push(`/search/name/${name}`);
-  };
-
   return (
     <div className="navbar__container">
       <div className="header__logo--mobile--container">
