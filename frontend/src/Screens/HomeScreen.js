@@ -8,10 +8,12 @@ import MessageBox from "../components/MessageBox";
 import MainCarousel from "../components/MainCarousel";
 
 function HomeScreen() {
+  window.scrollTo(0, 0);
+
   const dispatch = useDispatch();
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
-  console.log(products);
+  // eslint-disable-next-line no-unused-vars
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);

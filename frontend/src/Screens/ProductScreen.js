@@ -12,7 +12,6 @@ import { PRODUCT_REVIEW_CREATE_RESET } from "../constants/productConstants";
 import SimilarProducts from "../components/SimilarProducts";
 
 function ProductScreen(props) {
-  // scroll up on load smoothly
   window.scrollTo(0, 0);
 
   const productDetails = useSelector((state) => state.productDetails);

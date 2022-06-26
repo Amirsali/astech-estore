@@ -14,7 +14,6 @@ import PlaceOrderScreen from "./Screens/PlaceOrderScreen";
 import OrderStatusScreen from "./Screens/OrderStatusScreen";
 import CustomerRoute from "./components/CustomerRoute";
 import ProfileScreen from "./Screens/ProfileScreen";
-
 import PurchaseHistoryScreen from "./Screens/PurchaseHistoryScreen";
 import AdminRoute from "./components/AdminRoute";
 import ProductListScreen from "./Screens/ProductListScreen";
@@ -24,6 +23,7 @@ import UserListScreen from "./Screens/UserListScreen";
 import UserEditScreen from "./Screens/UserEditScreen";
 import SearchScreen from "./Screens/SearchScreen";
 import MapScreen from "./Screens/MapScreen";
+import DashboardScreen from "./Screens/DashboardScreen";
 
 function App() {
   window.scrollTo(0, 0);
@@ -43,7 +43,6 @@ function App() {
             component={MapScreen}
             exact
           ></CustomerRoute>
-
           <AdminRoute
             path="/orderlist"
             component={OrderListScreen}
@@ -57,6 +56,10 @@ function App() {
           <AdminRoute
             path="/productlist"
             component={ProductListScreen}
+          ></AdminRoute>
+          <AdminRoute
+            path="/dashboard"
+            component={DashboardScreen}
           ></AdminRoute>
           <Route
             path="/purchasehistory"

@@ -22,11 +22,10 @@ mongoose.connect(process.env.MONGODB_URL, {
 // image router for uploads
 app.use("/api/uploads", uploadRouter);
 
-// server request for products mongodb
-app.use("/api/products", productRouter);
-
 // server request for users mongodb
 app.use("/api/users", userRouter);
+// server request for products mongodb
+app.use("/api/products", productRouter);
 
 // server request for createdOrders
 app.use("/api/orders", orderRouter);
@@ -34,6 +33,11 @@ app.use("/api/orders", orderRouter);
 // PayPal api 1
 app.get("/api/config/paypal", (req, res) => {
   res.send(process.env.PAYPAL_CLIENT_ID || "sb");
+});
+
+// google map
+app.get("/api/config/google", (req, res) => {
+  res.send(process.env.GOOGLE_API_KEY || "");
 });
 
 // error catcher for userRouter
@@ -45,11 +49,6 @@ app.use((err, req, res, next) => {
 // app.get("/", (req, res) => {
 //   res.send("Server is ready");
 // });
-
-// google map
-app.get("/api/config/google", (req, res) => {
-  res.send(process.env.GOOGLE_API_KEY || "");
-});
 
 // uploadrouter path
 const __dirname = path.resolve();
