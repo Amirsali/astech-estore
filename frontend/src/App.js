@@ -24,6 +24,7 @@ import UserEditScreen from "./Screens/UserEditScreen";
 import SearchScreen from "./Screens/SearchScreen";
 import MapScreen from "./Screens/MapScreen";
 import DashboardScreen from "./Screens/DashboardScreen";
+import SupportScreen from "./Screens/SupportScreen";
 
 function App() {
   window.scrollTo(0, 0);
@@ -61,6 +62,7 @@ function App() {
             path="/dashboard"
             component={DashboardScreen}
           ></AdminRoute>
+          <AdminRoute path="/support" component={SupportScreen}></AdminRoute>
           <Route
             path="/purchasehistory"
             component={PurchaseHistoryScreen}

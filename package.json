@@ -16,7 +16,8 @@
     "react-google-charts": "^4.0.0",
     "react-icons": "^4.4.0",
     "react-responsive-carousel": "^3.2.20",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^4.5.1"
   },
   "name": "astech-v5",
   "proxy": "http://127.0.0.1:5000",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import { addToCart } from "../actions/cartActions";
 import "../styles/Product.css";
@@ -7,9 +7,7 @@ import Rating from "./Rating";
 
 function Product(props) {
   const { product } = props;
-  // get the items in the cart
-  const cart = useSelector((state) => state.cart);
-  const { cartItems } = cart;
+
   const dispatch = useDispatch();
   const productId = product.id;
   const history = useHistory();
@@ -25,11 +23,6 @@ function Product(props) {
     history.push(`/cart/${productId}?qty=${qty}`);
     dispatch(addToCart(productId));
     dispatch(addToCart(product._id, qty));
-  };
-
-  // handle view cart
-  const handleViewCart = () => {
-    history.push("/cart");
   };
 
   return (

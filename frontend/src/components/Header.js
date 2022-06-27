@@ -173,6 +173,9 @@ function Header(props) {
                 <Link to="/userlist" className="list__link">
                   Users
                 </Link>
+                <Link to="/support" className="list__link">
+                  Support
+                </Link>
               </div>
             </div>
           ) : userInfo ? (
@@ -236,7 +239,6 @@ function Header(props) {
               </li>
             ))
           )}
-
           <br />
           <li>
             <strong>Price</strong>

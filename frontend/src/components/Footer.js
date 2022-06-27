@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "../styles/Footer.css";
+import ChatBox from "./Chatbox";
 import Logo from "./Logo.png";
 
 function Footer() {
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
   return (
     <div className="footer__container">
       <div className="footer__links">
@@ -62,6 +66,9 @@ function Footer() {
             </a>
           </div>
         </div>
+      </div>
+      <div class="social__media">
+        {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
       </div>
     </div>
   );
