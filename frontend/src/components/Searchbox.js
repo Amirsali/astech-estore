@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import SearchIcon from "@material-ui/icons/Search";
 import "../styles/Searchbox.css";
 
 export default function SearchBox(props) {
   const [name, setName] = useState("");
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
     props.history.push(`/search/name/${name}`);
   };
 
@@ -21,10 +19,11 @@ export default function SearchBox(props) {
             placeholder="Search here.."
             onChange={(e) => setName(e.target.value)}
             className="header__searchInput"
-            // eslint-disable-next-line react/jsx-no-duplicate-props
-            type="text"
+            required
           />
-          <SearchIcon type="submit" className="header__searchIcon" />
+          <button type="submit" className="header__searchIcon-button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
         </div>
       </form>
     </div>
