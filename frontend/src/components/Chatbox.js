@@ -91,7 +91,7 @@ export default function ChatBox(props) {
             ))}
           </ul>
           <div>
-            <form onSubmit={submitHandler} className="row">
+            <form onSubmit={submitHandler} className="chatbox__form">
               <input
                 value={messageBody}
                 onChange={(e) => setMessageBody(e.target.value)}

@@ -7,7 +7,14 @@
   right: 5rem;
   bottom: 5rem;
   cursor: pointer;
-  background: hsla(186, 100%, 69%, 1);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* background: hsla(186, 100%, 69%, 1);
 
   background: linear-gradient(
     90deg,
@@ -27,7 +34,7 @@
     hsla(217, 100%, 50%, 1) 100%
   );
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#60EFFF", endColorstr="#0061FF", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#60EFFF", endColorstr="#0061FF", GradientType=1 ); */
 }
 .chatbox img {
   height: 3rem;
@@ -64,6 +71,11 @@
 }
 .chatbox li {
   margin-bottom: 1rem;
+}
+
+.chatbox__form {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 .chatbox input {
   width: calc(100% - 4rem);

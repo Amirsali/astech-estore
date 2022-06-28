@@ -11,7 +11,10 @@ function Product(props) {
   const dispatch = useDispatch();
   const productId = product.id;
   const history = useHistory();
-  const handleClick = () => history.push(`/product/${product._id}`);
+  const handleClick = () => {
+    history.push(`/product/${product._id}`);
+    window.scrollTo(0, 0);
+  };
 
   const [qty] = useState(1);
 

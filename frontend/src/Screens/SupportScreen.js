@@ -125,9 +125,7 @@ export default function SupportScreen() {
             .map((user) => (
               <li
                 key={user._id}
-                className={
-                  user._id === selectedUser._id ? "    selected" : "  "
-                }
+                className={user._id === selectedUser._id ? "selected" : ""}
               >
                 <button
                   className="block"
@@ -162,14 +160,16 @@ export default function SupportScreen() {
               ))}
             </ul>
             <div>
-              <form onSubmit={submitHandler} className="row">
+              <form onSubmit={submitHandler}>
                 <input
                   value={messageBody}
                   onChange={(e) => setMessageBody(e.target.value)}
                   type="text"
                   placeholder="type message"
                 />
-                <button type="submit">Send</button>
+                <button type="submit">
+                  <i className="fa fa-paper-plane" />
+                </button>
               </form>
             </div>
           </div>

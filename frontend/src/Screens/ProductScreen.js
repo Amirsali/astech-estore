@@ -12,7 +12,7 @@ import { PRODUCT_REVIEW_CREATE_RESET } from "../constants/productConstants";
 import SimilarProducts from "../components/SimilarProducts";
 
 function ProductScreen(props) {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;

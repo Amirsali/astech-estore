@@ -33,7 +33,7 @@
   color: #766a81;
 }
 .supportScreen__users li.selected {
-  background-color: #132f5a;
+  font-size: x-large;
 }
 
 .supportScreen__messages {
@@ -49,8 +49,14 @@
   margin-bottom: 1rem;
 }
 .supportScreen__messages input {
+  margin-left: 3rem;
   font-size: 1rem;
-  width: calc(100% - 9rem);
+  width: calc(100% - 15rem);
+}
+
+.supportScreen__messages button {
+  font-size: 1rem;
+  margin-left: 5px;
 }
 .supportScreen__messages ul {
   height: calc(100vh - 18rem);
