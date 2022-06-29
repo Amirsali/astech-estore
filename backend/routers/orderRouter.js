@@ -148,7 +148,7 @@ orderRouter.get(
 );
 
 orderRouter.get(
-  "/summary",
+  "/:_id/summary",
   isAuth,
   isAdmin,
   expressAsyncHandler(async (req, res) => {

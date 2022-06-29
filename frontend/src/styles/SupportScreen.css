@@ -90,3 +90,30 @@
   width: 18px;
   background-color: #f02020;
 }
+
+/* mobile view */
+@media screen and (max-width: 768px) {
+  .supportScreen__users {
+    margin-bottom: 3rem;
+  }
+  .supportScreen__users li {
+    color: #fff;
+    font-weight: 600;
+  }
+  .supportScreen__users button {
+    margin-left: -2rem;
+
+    font-size: smaller;
+  }
+  .supportScreen__messages {
+    width: 100%;
+    padding-right: 2rem;
+  }
+
+  .supportScreen__messages input {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    width: calc(100% - 5rem);
+  }
+}
