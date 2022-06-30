@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import Chart from "react-google-charts";
+import { useDispatch, useSelector } from "react-redux";
 import { summaryOrder } from "../actions/orderActions";
 import Loading from "../components/Loading";
 import MessageBox from "../components/MessageBox";
+import "../styles/Dashboard.css";
 
 export default function DashboardScreen() {
   const orderSummary = useSelector((state) => state.orderSummary);
@@ -14,8 +15,7 @@ export default function DashboardScreen() {
     dispatch(summaryOrder());
   }, [dispatch]);
   return (
-    // show dashboard
-    <div>
+    <div className="dashboard__Container">
       <div className="row">
         <h1>Dashboard</h1>
       </div>
@@ -65,15 +65,15 @@ export default function DashboardScreen() {
                 <MessageBox>No Sale</MessageBox>
               ) : (
                 <Chart
-                  width="100%"
-                  height="400px"
+                  width={"100%"}
+                  height={"400px"}
                   chartType="AreaChart"
                   loader={<div>Loading Chart</div>}
                   data={[
                     ["Date", "Sales"],
                     ...summary.dailyOrders.map((x) => [x._id, x.sales]),
                   ]}
-                ></Chart>
+                />
               )}
             </div>
           </div>
