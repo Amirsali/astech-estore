@@ -141,7 +141,7 @@ ul {
 
 .product__topRated {
   position: absolute;
-  margin-left: 95rem;
+  margin-left: 93rem;
   margin-top: -27rem;
   max-height: 95vh;
   display: flex;
@@ -150,7 +150,7 @@ ul {
   width: 10rem;
   padding: 7px;
   border: 0.15rem #132f5a solid;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   overflow: auto;
   width: max-content;
