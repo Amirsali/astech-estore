@@ -157,11 +157,6 @@ ul {
   size-adjust: xx-small;
 }
 
-/* on hover show scroll bar */
-.product__topRated:hover {
-  overflow: auto;
-}
-
 .product__reviews {
   margin-top: 3rem;
   width: 100%;
