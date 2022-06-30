@@ -10,6 +10,7 @@ import { createReview, detailsProduct } from "../actions/productActions";
 import { addToCart } from "../actions/cartActions";
 import { PRODUCT_REVIEW_CREATE_RESET } from "../constants/productConstants";
 import SimilarProducts from "../components/SimilarProducts";
+import TopRated from "../components/TopRated";
 
 function ProductScreen(props) {
   // window.scrollTo(0, 0);
@@ -147,7 +148,9 @@ function ProductScreen(props) {
               </div>
             </div>
           </div>
-
+          <div className="product__topRated">
+            <TopRated />
+          </div>
           {/* similar products */}
           <div className="product__similar">
             <SimilarProducts />

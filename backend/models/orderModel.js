@@ -1,16 +1,13 @@
 import mongoose from "mongoose";
 
-// order API
 const orderSchema = new mongoose.Schema(
   {
-    // fields
     orderItems: [
       {
         name: { type: String, required: true },
         qty: { type: Number, required: true },
         image: { type: String, required: true },
         price: { type: Number, required: true },
-        //   link
         product: {
           type: mongoose.Schema.Types.ObjectId,
           ref: "Product",
@@ -50,8 +47,6 @@ const orderSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
-
-// oder model
 
 const Order = mongoose.model("Order", orderSchema);
 

@@ -23,7 +23,6 @@ import {
   PRODUCT_REVIEW_CREATE_FAIL,
 } from "../constants/productConstants";
 
-// implementing productList from backend
 export const listProducts = () => async (dispatch) => {
   dispatch({
     type: PRODUCT_LIST_REQUEST,
