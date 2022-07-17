@@ -137,7 +137,6 @@
   text-align: left;
   font-size: 0.75rem;
   margin-bottom: 10px;
-  /* opacity: 90%; */
 }
 
 /* Aside */
@@ -189,6 +188,135 @@ button.close-sidebar {
 .catList {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px) {
+  .header {
+    height: 50px;
+    width: 75%;
+  }
+  .header__logo--mobile--container {
+    display: none;
+  }
+
+  .header__search {
+    max-width: 1100px;
+  }
+
+  .header__option {
+    margin-right: 3px;
+  }
+
+  .header__optionLineOne {
+    font-size: 9px;
+    margin-right: 0.1rem;
+  }
+
+  .header__optionBasket {
+    padding-top: 4px;
+    padding-left: 1px;
+  }
+  .header__optionLineTwo {
+    display: flex;
+    gap: 5px;
+  }
+
+  .header__optionLineTwo > i {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    min-width: 5rem;
+    padding: 0.2rem;
+    background-color: #132f5a;
+    margin-top: 0.15rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-decoration: none;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .list__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    text-align: left;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+
+  /* Aside */
+  aside {
+    position: fixed;
+    width: 210px;
+    height: 100%;
+    background-color: #132f5a;
+    color: white;
+    z-index: 1000;
+    transform: translateX(-30rem);
+    transition: all 0.5s;
+  }
+  aside.open {
+    transform: translateX(0);
+  }
+  button.open-sidebar {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    margin-right: 10px;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button.open-sidebar:hover {
+    border-color: #ffffff;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  aside li > .link__all {
+    color: white;
+    text-decoration: none;
+    opacity: 90%;
+  }
+  aside li > .link__all:hover {
+    transition: 0.25s ease-out;
+    opacity: 100%;
+  }
+  button.close-sidebar {
+    padding: 0.15rem 0.4rem;
+  }
+  .catList {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /* tablet and iPad */
