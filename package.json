@@ -30,14 +30,15 @@
     "nodemon": "^2.0.12"
   },
   "engines": {
-    "node": "14.17.1",
+    "node": "16.15.1",
     "npm": "7.17.0"
   },
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
-  "author": "",
+  "author": "Amirsali <mir23wpurposes@gmail.com>",
   "license": "ISC",
-  "description": ""
+  "description": "Astech-etore backend",
+  "repository": "https://github.com/Amirsali/astech-estore.git"
 }
